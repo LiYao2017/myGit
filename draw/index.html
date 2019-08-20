@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/draw.js"></script>
+	</head>
+	<body>	
+		<canvas id="canvas" width="750px" height="600px" style="border:1px solid red ">
+           浏览器不支持canvas
+		</canvas>
+		
+		
+		<script>
+			var draws = drawGraphing('canvas').graphing({
+				drawWidth : 375,  //刻度图的X位置
+				drawHeight: 300,  //刻度图的Y位置
+				RADIUS : 200,
+				scaleSize:4,
+				scale: 26,
+			});
+			draws({
+				key:20,
+				textStyle : {
+					text : '5200'
+				}
+			}) // 默认大小为-115 - 115
+		</script>
+	</body>
+</html>
